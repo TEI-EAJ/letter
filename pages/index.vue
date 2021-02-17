@@ -5,23 +5,34 @@
         v-model="drawer2"
         app
         :temporary="true"
-        right
+        left
         :width="256 * 2"
       >
         <Metadata></Metadata>
       </v-navigation-drawer>
 
       <v-app-bar color="primary" dark flat>
+        <v-app-bar-nav-icon @click.stop="drawer2 = !drawer2" />
         <v-toolbar-title>
           <Title></Title>
         </v-toolbar-title>
 
         <v-spacer></v-spacer>
 
+        <v-btn
+          class="mr-2"
+          depressed
+          btn
+          color="primary"
+          :href="baseUrl + localePath({ name: 'index' })"
+        >
+          <v-icon>mdi-home</v-icon>
+        </v-btn>
+
         <v-menu offset-y>
           <template #activator="{ on }">
             <v-btn depressed btn color="primary" v-on="on">
-              <v-icon class="mr-2">mdi-translate</v-icon>
+              <v-icon>mdi-translate</v-icon>
             </v-btn>
           </template>
 
@@ -34,9 +45,33 @@
             </v-list-item>
           </v-list>
         </v-menu>
-
-        <v-app-bar-nav-icon @click.stop="drawer2 = !drawer2" />
       </v-app-bar>
+    </div>
+
+    <div v-if="!xml">
+      <v-container class="pa-10">
+        <h2>TEI Viewer</h2>
+        <p class="mt-5">TEI/XMLファイルを選択してください。</p>
+        <input type="file" @change="onFileChange" />
+
+        <div v-for="(item, key) in items" :key="key">
+          <h3 class="mt-10 mb-2">
+            {{ $t('例') }} {{ key + 1 }}：{{ item.label }}
+          </h3>
+
+          <v-btn
+            color="primary"
+            class="ma-2"
+            :href="
+              baseUrl + localePath({ name: 'index', query: { u: item.url } })
+            "
+            >{{ $t('可視化例を見る') }}</v-btn
+          >
+          <v-btn class="ma-2" :href="item.url">{{
+            $t('サンプルデータを見る')
+          }}</v-btn>
+        </div>
+      </v-container>
     </div>
 
     <template v-if="loading"
@@ -48,7 +83,7 @@
       </div>
     </template>
 
-    <v-container fluid>
+    <v-container v-show="xml" fluid>
       <v-row class="mt-2">
         <v-col cols="12" :sm="manifest ? 6 : 12">
           <v-card
@@ -136,6 +171,18 @@ export default {
     }
   },
   computed: {
+    items: {
+      get() {
+        console.log(this.baseUrl + '/data/letter.xml')
+        return [
+          {
+            label: 'Letter to Leslie Gunston',
+            url: this.baseUrl + '/data/letter.xml',
+          },
+        ]
+      },
+    },
+
     style: {
       get() {
         return this.$store.getters.getStyle
@@ -183,11 +230,16 @@ export default {
   },
 
   mounted() {
-    this.loading = true
-
     window.addEventListener('resize', this.handleResize)
 
     const query = this.$route.query
+
+    if (!query.u) {
+      return
+    }
+
+    this.loading = true
+
     const url = query.u || this.baseUrl + '/data/ex2_sample_finished.xml'
     const CETEIcean = new CETEI()
 
@@ -195,15 +247,21 @@ export default {
 
     const self = this
     CETEIcean.getHTML5(url, function (data) {
+      self.init(data)
+    })
+  },
+
+  methods: {
+    init(data) {
       console.log('downloaded.')
-      self.xml = data
+      this.xml = data
 
       const dfStr = convert.xml2json(data.outerHTML, {
         compact: false,
         spaces: 4,
       })
       const df = JSON.parse(dfStr)
-      self.element = df
+      this.element = df
 
       // facs
       const sources = $(data).find('tei-surface')
@@ -216,20 +274,33 @@ export default {
       // メイン
 
       const canvas = facs[Object.keys(facs)[0]]
-      self.canvas = canvas
+      this.canvas = canvas
 
-      self.facs = facs
+      this.facs = facs
       // マニフェスト
       const manifest = $(data).find('tei-facsimile').attr('source')
-      self.manifest = manifest
+      this.manifest = manifest
 
-      self.loading = false
+      this.loading = false
 
       console.log('processed.')
-    })
-  },
+    },
+    onFileChange(e) {
+      const files = e.target.files || e.dataTransfer.files
 
-  methods: {
+      const reader = new FileReader()
+      reader.readAsText(files[0])
+
+      const self = this
+
+      reader.onload = function () {
+        const CETEIcean = new CETEI()
+
+        CETEIcean.makeHTML5(reader.result, function (data) {
+          self.init(data)
+        })
+      }
+    },
     handleResize() {
       // resizeのたびにこいつが発火するので、ここでやりたいことをやる
       this.width = window.innerWidth
