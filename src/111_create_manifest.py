@@ -193,7 +193,7 @@ for j in range(4, r_count):
         "sequences": [
             {
                 "@type": "sc:Sequence",
-                "@id": manifest_uri+"/sequence/normal",
+                "@id": manifest_uri.replace("/manifest.json", "")+"/sequence/normal",
                 "label": "Current Page Order",
                 "viewingHint": viewingHint,
                 "canvases": []
@@ -287,7 +287,7 @@ for j in range(4, r_count):
                 width = img_obj["width"]
                 height = img_obj["height"]
 
-            canvas_id = manifest_uri+"/canvas/p"+str(i+1)
+            canvas_id = manifest_uri.replace("/manifest.json", "")+"/canvas/p"+str(i+1)
 
             canvas_label = "["+str(i+1)+"]"
 
@@ -296,13 +296,17 @@ for j in range(4, r_count):
                 "@id": canvas_id,
                 "label": canvas_label,
                 "thumbnail": {
-                    "@id": thumbnail
+                    "@id": thumbnail,
+                    "@type": "dctypes:Image",
+                    "format": "image/jpeg",
+                    "width" : width,
+                    "height" : height,
                 },
                 "images": [
                     {
                         "@type": "oa:Annotation",
                         "motivation": "sc:painting",
-                        "@id": manifest_uri + "/annotation/p"+str(i+1)+"-image",
+                        "@id": manifest_uri.replace("/manifest.json", "") + "/annotation/p"+str(i+1)+"-image",
                         "resource": {
                             "@type": "dctypes:Image",
                             "format": "image/jpeg",
@@ -338,7 +342,7 @@ for j in range(4, r_count):
             page = toc_obj["page"]
             toc = toc_obj["toc"]
 
-            range_id = manifest_uri + "/range/r" + str(page)
+            range_id = manifest_uri.replace("/manifest.json", "") + "/range/r" + str(page)
 
             canvas_id = canvases[page-1]["@id"]
 

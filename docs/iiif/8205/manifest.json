@@ -8,19 +8,19 @@
     "related": "http://ww1lit.nsms.ox.ac.uk/ww1lit/items/show/8205",
     "sequences": [
         {
-            "@id": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/sequence/normal",
+            "@id": "https://tei-eaj.github.io/letter/iiif/8205/sequence/normal",
             "@type": "sc:Sequence",
             "canvases": [
                 {
-                    "@id": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/canvas/p1",
+                    "@id": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p1",
                     "@type": "sc:Canvas",
                     "height": 1525,
                     "images": [
                         {
-                            "@id": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/annotation/p1-image",
+                            "@id": "https://tei-eaj.github.io/letter/iiif/8205/annotation/p1-image",
                             "@type": "oa:Annotation",
                             "motivation": "sc:painting",
-                            "on": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/canvas/p1",
+                            "on": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p1",
                             "resource": {
                                 "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg",
                                 "@type": "dctypes:Image",
@@ -32,20 +32,24 @@
                     ],
                     "label": "[1]",
                     "thumbnail": {
-                        "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg"
+                        "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg",
+                        "height": 1525,
+                        "width": 1200
                     },
                     "width": 1200
                 },
                 {
-                    "@id": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/canvas/p2",
+                    "@id": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p2",
                     "@type": "sc:Canvas",
                     "height": 1541,
                     "images": [
                         {
-                            "@id": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/annotation/p2-image",
+                            "@id": "https://tei-eaj.github.io/letter/iiif/8205/annotation/p2-image",
                             "@type": "oa:Annotation",
                             "motivation": "sc:painting",
-                            "on": "https://tei-eaj.github.io/letter/iiif/8205/manifest.json/canvas/p2",
+                            "on": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p2",
                             "resource": {
                                 "@id": "https://tei-eaj.github.io/letter/files/original/letter2.jpg",
                                 "@type": "dctypes:Image",
@@ -57,7 +61,11 @@
                     ],
                     "label": "[2]",
                     "thumbnail": {
-                        "@id": "https://tei-eaj.github.io/letter/files/original/letter2.jpg"
+                        "@id": "https://tei-eaj.github.io/letter/files/original/letter2.jpg",
+                        "@type": "dctypes:Image",
+                        "format": "image/jpeg",
+                        "height": 1541,
+                        "width": 1200
                     },
                     "width": 1200
                 }
