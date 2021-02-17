@@ -1,0 +1,12 @@
+{
+  "name": "TEI Viewer",
+  "short_name": "TEI Viewer",
+  "description": "TEI Viewer",
+  "icons": [],
+  "start_url": "/letter/?standalone=true",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "lang": "ja",
+  "orientation": "portrait"
+}

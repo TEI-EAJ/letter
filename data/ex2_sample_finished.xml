@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="tei_all_ja.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Letter to Leslie Gunston</title>
+				<author>Wilfred Owen</author>
+				<editor>Renée van Baalen</editor>
+				<principal>永崎研宣</principal>
+				<meeting>人文情報学研究</meeting>
+				<respStmt>
+					<resp>エンコーディングの改良</resp>
+					<name>永崎研宣</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>東京大学大学院人文社会系研究科</publisher>
+				<distributor>人文情報学研究</distributor>
+				<authority>永崎研宣</authority>
+				<pubPlace>
+					<address>
+						<orgName>東京大学大学院人文社会系研究科人文情報学部門人文情報学拠点</orgName>
+						<street>文京区本郷7-3-1</street>
+						<settlement>東京都</settlement>
+						<postCode>1130033</postCode>
+						<country>日本</country>
+					</address>
+				</pubPlace>
+				<date when="2020-06-05">2020年6月5日</date>
+				<idno>nagasaki-2020-06-01</idno>
+				<availability>
+					<licence target="http://creativecommons.org/licenses/by/3.0/">クリエイティブ・コモンズライセンス
+						CC BY</licence>
+				</availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<title>Letter to Leslie Gunston</title>
+						<author>Wilfred Owen</author>
+					</analytic>
+					<monogr>
+						<title>The Wilfred Owen Collection</title>
+						<ref target="http://www.oucs.ox.ac.uk/ww1lit/collections/document/5243/4769"
+							> First WorldWar Poetry Digital Archive</ref>
+						<imprint>
+							<publisher>The First World War Poetry Digital Archive</publisher>
+							<pubPlace>Oxford</pubPlace>
+							<biblScope unit="page" n="2">Two pages</biblScope>
+						</imprint>
+					</monogr>
+					<relatedItem>
+						<bibl>The source of this digital resource is a copy from the
+								<distributor>Harry Ransom Centre</distributor>.</bibl>
+					</relatedItem>
+				</biblStruct>
+
+				<listPerson>
+					<person xml:id="LG">
+						<persName>
+							<forename>Leslie</forename>
+							<surname>Gunston</surname>
+						</persName>
+					</person>
+					<person xml:id="herc">
+						<persName>Heracles</persName>
+					</person>
+					<person xml:id="ant">
+						<persName>Antaeus</persName>
+					</person>
+					<person xml:id="earth">
+						<persName>Mother Earth</persName>
+					</person>
+					<person xml:id="WL">
+						<persName>
+							<forename>William</forename>
+							<forename>John</forename>
+							<surname>Locke</surname>
+						</persName>
+						<birth when="1863-03-20"><placeName>Cunningsbury St. George</placeName>,
+							20th March 1863</birth>
+						<death when="1930-05-20"><placeName>Paris</placeName>, 15th May 1930</death>
+					</person>
+					<person xml:id="AS">
+						<persName>
+							<forename>Algernon</forename>
+							<forename>Charles</forename>
+							<surname>Swinburne</surname>
+						</persName>
+						<birth when="1837-04-05"><placeName>London</placeName>, 5th April
+							1837</birth>
+						<death when="1909-04-10"><placeName>London</placeName>, 10th April
+							1909</death>
+					</person>
+					<person xml:id="WO">
+						<persName>
+							<forename>Wilfred</forename>
+							<forename>Edward</forename>
+							<forename>Salter</forename>
+							<surname>Owen</surname>
+						</persName>
+						<birth when="1893-03-18"><placeName>Oswestry</placeName>, 18th March
+							1893</birth>
+						<death when="1918-11-04"><placeName>Ors</placeName>, 4th November
+							1918</death>
+					</person>
+				</listPerson>
+				<listPlace>
+					<place xml:id="edinburgh">
+						<placeName>Edinburgh</placeName>
+						<region>Scotland</region>
+						<country>United Kingdom</country>
+						<place xml:id="craiglockhart">
+							<placeName>Craiglockhart War Hospital</placeName>
+							<settlement>Edinburgh</settlement>
+							<location>
+								<geo>55.91812, -3.24019</geo>
+							</location>
+						</place>
+					</place>
+				</listPlace>
+				<listOrg>
+					<org xml:id="Berlitz">
+						<orgName>Berlitz</orgName>
+						<place>
+							<location>
+								<address>
+									<street>14 Frederick Street</street>
+									<postCode>EH2 2HB</postCode>
+									<settlement>Edinburgh</settlement>
+									<country>United Kingdom</country>
+								</address>
+							</location>
+						</place>
+					</org>
+					<org xml:id="Fieldclub">
+						<orgName>Field Club</orgName>
+						<note>The Edinburgh Field Club is now know as the <ref
+								target="http://www.edinburghnaturalhistorysociety.org.uk/">Edinburgh
+								Natural History Society</ref>.</note>
+					</org>
+				</listOrg>
+				<msDesc>
+					<msIdentifier>
+						<country>United States of America</country>
+						<region>Texas</region>
+						<settlement>Austin</settlement>
+						<institution> The University of Texas at Austin </institution>
+						<repository>Harry Ransom Centre</repository>
+						<collection>Wilfred Owen Collected Letters</collection>
+						<idno type="folio">ff504</idno>
+						<altIdentifier>
+							<idno>Letter no. 535 Ed. 'Wilfred Owen Collected Letters'</idno>
+						</altIdentifier>
+						<msName>Letter to Leslie Gunston</msName>
+					</msIdentifier>
+					<msContents>
+						<summary>Talks about forthcoming address to the 'Field Club'. Includes a
+							partial draft of 'The Wrestlers'. This is letter no. 535 in Ed. 'Wilfred
+							Owen Collected Letters'.</summary>
+						<msItem>
+							<author>Wilfred Owen (1893-1918)</author>
+							<textLang mainLang="en">English</textLang>
+							<title>Letter To Leslie Gunston / The Wrestlers</title>
+						</msItem>
+					</msContents>
+					<physDesc>
+						<objectDesc form="folio">
+							<supportDesc material="paper">
+								<support>A single folio of <material>paper</material> in the
+									collection as ff504 recto and verso</support>
+							</supportDesc>
+							<layoutDesc>
+								<layout columns="1" writtenLines="20">Written full width as a single
+									column, with approximately 20 lines per page</layout>
+							</layoutDesc>
+						</objectDesc>
+						<handDesc hands="1">
+							<handNote>Written in <persName ref="#WO">Wilfred Owen's</persName> hand
+								in pen.</handNote>
+						</handDesc>
+					</physDesc>
+					<history>
+						<origin>This letter was written by <persName ref="#WO">Wilfred
+								Owen</persName> in <origDate when="1917-07">July 1917</origDate> at
+								<origPlace ref="#craiglockhart"><orgName>Craiglockhart War
+									Hospital</orgName></origPlace>
+						</origin>
+					</history>
+					<additional>
+						<surrogates>A digital image is available from the First World War Poetry
+							Digital Archive at <ptr
+								target="http://www.oucs.ox.ac.uk/ww1lit/collections/document/5243/4770"
+							/>.</surrogates>
+					</additional>
+				</msDesc>
+
+			</sourceDesc>
+		</fileDesc>
+		<encodingDesc>
+			<p/>
+		</encodingDesc>
+
+	</teiHeader>
+	<facsimile source="https://tei-eaj.github.io/letter/iiif/8205/manifest.json">
+		<surface source="https://tei-eaj.github.io/letter/iiif/8205/canvas/p1" xml:id="p1">
+			<graphic url="https://tei-eaj.github.io/letter/files/original/letter1.jpg"/>
+		</surface>
+		<surface source="https://tei-eaj.github.io/letter/iiif/8205/canvas/p2" xml:id="p2">
+			<graphic url="https://tei-eaj.github.io/letter/files/original/letter2.jpg"/>
+		</surface>
+	</facsimile>
+	<text>
+		<body>
+			<pb corresp="#p1" facs="https://tei-eaj.github.io/letter/files/original/letter1.jpg"/>
+			<opener>
+				<dateline rend="right"><lb/>Craiglockhart. <lb/><date when="1917-07">July 1917.
+						<lb/>Wednesday</date>
+				</dateline>
+				<lb/>
+				<salute>Dear L.</salute>
+			</opener>
+			<div type="prose">
+				<p><lb/>Thanks for yours of this morning. I hope <lb/>you <add place="above"
+						>have</add> had my card <del>of</del> posted last Monday. <lb/>On Mond. next
+					I lecture the "Field ClDub" - <lb/>a Nat. Hist. Association, in the lines of our
+					<lb/>old Society - Geological, (you + me) + Botanical <lb/>(New) Do you
+					remember: <del>my</del>
+					<choice>
+						<corr>your</corr>
+						<sic>you</sic>
+					</choice> old <lb/>Black Molt? Well, the days have <lb/>come when I am <add
+						place="above">one of the</add> founders of a real <lb/>learned society. My
+					subject <del>is</del> has <lb/>the rather journalese Title of "Do Plants
+					<lb/>Think? - a study of the Response to <lb/>Stimuli <del>shown</del> + Devices
+					for Fertilisation, <lb/>etc. I have no books yet, but I remember a number of
+					useful points <lb/>from your big Cassels' (I think it was <lb/>Cassels') studied
+					a 1911. Meanwhile <pb corresp="#p2"
+						facs="https://tei-eaj.github.io/letter/files/original/letter2.jpg"/>
+					<lb/>I'm beastly bothered with our Mag. <lb/>(herewith) <emph rend="ul"
+						>and</emph> I'm <choice>
+						<sic>take</sic>
+						<corr>taking</corr>
+					</choice> German <lb/>Lessons at the Berlitz, Edin. </p>
+				<p>
+					<lb/>Last week I wrote (to order) a strong <lb/>bit of Blank: on <hi rend="ul"
+						>Antaeus v. Heracles</hi>. <lb/>These are the best lines, methinks:
+					<lb/>(N.B. Antaeus deriving strength from his Mother Earth <lb/>nearly licked
+					old Herk.)</p>
+			</div>
+
+
+			<div type="verse">
+				<l>... How Earth herself empowered him with her touch, </l>
+				<l>Gave him the grip and stringency of Winter, </l>
+				<l>And all the ardour of th' invincible Spring; </l>
+				<l>How all the blood of June glutted his heart, </l>
+				<l>And all the glow of huge autumnal storms </l>
+				<l>Stirred on his face, and flickered from his eyes.</l>
+			</div>
+
+
+			<div type="prose">
+				<p><lb/>I had seen your Song. May the music <lb/>be equally happy. You <emph
+						rend="ul">are</emph> lucky! <lb/>You shall have my Locke's "Usurper" if you
+					<lb/>will. Its now at home. </p>
+				<p>
+					<lb/>I see Swinburne also wrote a number of <lb/>replicas of the olde Ballad!
+					Heigh ho!</p>
+			</div>
+
+			<closer>
+				<salute rend="ul">Ever Yours</salute>
+				<signed rend="monogram">WEO</signed>
+			</closer>
+
+		</body>
+
+	</text>
+
+
+</TEI>
