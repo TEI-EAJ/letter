@@ -22,17 +22,22 @@
                             "motivation": "sc:painting",
                             "on": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p1",
                             "resource": {
-                                "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg",
+                                "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter1/full/full/0/default.jpg",
                                 "@type": "dctypes:Image",
                                 "format": "image/jpeg",
                                 "height": 1525,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter1",
+                                    "profile": "http://iiif.io/api/image"
+                                },
                                 "width": 1200
                             }
                         }
                     ],
                     "label": "[1]",
                     "thumbnail": {
-                        "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg",
+                        "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter1/full/256,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": 1525,
@@ -51,17 +56,22 @@
                             "motivation": "sc:painting",
                             "on": "https://tei-eaj.github.io/letter/iiif/8205/canvas/p2",
                             "resource": {
-                                "@id": "https://tei-eaj.github.io/letter/files/original/letter2.jpg",
+                                "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter2/full/full/0/default.jpg",
                                 "@type": "dctypes:Image",
                                 "format": "image/jpeg",
                                 "height": 1541,
+                                "service": {
+                                    "@context": "http://iiif.io/api/image/2/context.json",
+                                    "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter2",
+                                    "profile": "http://iiif.io/api/image"
+                                },
                                 "width": 1200
                             }
                         }
                     ],
                     "label": "[2]",
                     "thumbnail": {
-                        "@id": "https://tei-eaj.github.io/letter/files/original/letter2.jpg",
+                        "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter2/full/256,/0/default.jpg",
                         "@type": "dctypes:Image",
                         "format": "image/jpeg",
                         "height": 1541,
@@ -75,7 +85,7 @@
         }
     ],
     "thumbnail": {
-        "@id": "https://tei-eaj.github.io/letter/files/original/letter1.jpg"
+        "@id": "https://05r4t6462c.execute-api.us-east-1.amazonaws.com/latest/iiif/2/tei-eaj%2Fletter1/full/256,/0/default.jpg"
     },
     "viewingDirection": "left-to-right"
 }
