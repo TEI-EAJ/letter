@@ -1,0 +1,11 @@
+.tei-teiHeader {
+  display: none;
+}
+.tei-div {
+  padding: 20px;
+}
+.tei-head {
+  padding: 20px;
+  font-weight: bold !important;
+  font-size: large;
+}
