@@ -12,7 +12,7 @@
       </v-navigation-drawer>
 
       <v-app-bar color="primary" dark flat>
-        <v-app-bar-nav-icon @click.stop="drawer2 = !drawer2" />
+        <v-app-bar-nav-icon v-show="xml" @click.stop="drawer2 = !drawer2" />
         <v-toolbar-title>
           <Title></Title>
         </v-toolbar-title>
